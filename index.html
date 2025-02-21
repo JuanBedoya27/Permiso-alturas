@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Permiso para trabajos en altura</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<form>
+		<h1>PERMISO PARA TRABAJOS EN ALTURA</h1>
+		<p><strong>CÓDIGO:</strong> F-RH-019 &nbsp;&nbsp; <strong>VERSIÓN:</strong> 00 &nbsp;&nbsp;
+			<strong>FECHA:</strong> 13-03-2020</p>
+
+		<!-- PROYECTO - AREA -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td>
+						<strong>PROYECTO - ÁREA:</strong>
+						<input type="text" name="proyecto_area" style="width: 90%;"
+							placeholder="Ej. Mantenimiento/Obra X" />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Fechas y horas -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td>
+						<strong>FECHA DE EXPEDICIÓN (dd-mm-aa):</strong>
+						<input type="text" name="fecha_expedicion" style="width: 80%;" placeholder="dd-mm-aaaa" />
+					</td>
+					<td>
+						<strong>Hora inicio tarea:</strong>
+						<input type="text" name="hora_inicio" style="width: 80%;" placeholder="HH:MM" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>VÁLIDO HASTA (dd-mm-aa):</strong>
+						<input type="text" name="valido_hasta" style="width: 80%;" placeholder="dd-mm-aaaa" />
+					</td>
+					<td>
+						<strong>Hora terminación tarea:</strong>
+						<input type="text" name="hora_fin" style="width: 80%;" placeholder="HH:MM" />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Nombres y apellidos -->
+		<h2>NOMBRES Y APELLIDOS DE LAS PERSONAS QUE EJECUTARÁN EL TRABAJO</h2>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>N°</th>
+						<th>Nombres y Apellidos</th>
+						<th>Cédula</th>
+						<th>Firma Trabajador</th>
+						<th>N°</th>
+						<th>Cédula</th>
+						<th>Nombres y Apellidos</th>
+						<th>Firma Trabajador</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<!-- Fila 1 -->
+					<tr>
+						<td>1</td>
+						<td>
+							<textarea name="nombre_1" rows="2" wrap="soft" oninput="autoExpand(this)"></textarea>
+						</td>
+						<td>
+							<textarea name="cedula_1" rows="2" wrap="soft" oninput="autoExpand(this)"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_1" rows="2" placeholder="(O nombre a modo de firma)" wrap="soft"
+								oninput="autoExpand(this)"></textarea>
+						</td>
+						<td>5</td>
+						<td>
+							<textarea name="cedula_5" rows="2" wrap="soft" oninput="autoExpand(this)"></textarea>
+						</td>
+						<td>
+							<textarea name="nombre_5" rows="2" wrap="soft" oninput="autoExpand(this)"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_5" rows="2" placeholder="(O nombre a modo de firma)" wrap="soft"
+								oninput="autoExpand(this)"></textarea>
+						</td>
+					</tr>
+
+					<!-- Fila 2 -->
+					<tr>
+						<td>2</td>
+						<td>
+							<textarea name="nombre_2" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="cedula_2" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_2" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>6</td>
+						<td>
+							<textarea name="cedula_6" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="nombre_6" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_6" style="width:95%;" rows="2"></textarea>
+						</td>
+					</tr>
+
+					<!-- Fila 3 -->
+					<tr>
+						<td>3</td>
+						<td>
+							<textarea name="nombre_3" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="cedula_3" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_3" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>7</td>
+						<td>
+							<textarea name="cedula_7" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="nombre_7" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_7" style="width:95%;" rows="2"></textarea>
+						</td>
+					</tr>
+
+					<!-- Fila 4 -->
+					<tr>
+						<td>4</td>
+						<td>
+							<textarea name="nombre_4" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="cedula_4" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_4" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>8</td>
+						<td>
+							<textarea name="cedula_8" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="nombre_8" style="width:95%;" rows="2"></textarea>
+						</td>
+						<td>
+							<textarea name="firma_8" style="width:95%;" rows="2"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Pasos de la tarea -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>PASOS DE LA TAREA</th>
+						<th>PELIGROS EXISTENTES Y POTENCIALES</th>
+						<th>CONSECUENCIAS</th>
+						<th>CONTROLES REQUERIDOS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><textarea name="paso_1" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="peligros_1" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="consecuencias_1" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="controles_1" rows="2" style="width: 95%;"></textarea></td>
+					</tr>
+					<tr>
+						<td><textarea name="paso_2" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="peligros_2" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="consecuencias_2" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="controles_2" rows="2" style="width: 95%;"></textarea></td>
+					</tr>
+					<tr>
+						<td><textarea name="paso_3" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="peligros_3" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="consecuencias_3" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="controles_3" rows="2" style="width: 95%;"></textarea></td>
+					</tr>
+					<tr>
+						<td><textarea name="paso_4" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="peligros_4" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="consecuencias_4" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="controles_4" rows="2" style="width: 95%;"></textarea></td>
+					</tr>
+					<tr>
+						<td><textarea name="paso_5" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="peligros_5" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="consecuencias_5" rows="2" style="width: 95%;"></textarea></td>
+						<td><textarea name="controles_5" rows="2" style="width: 95%;"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Estado de salud -->
+		<h2>ESTADO DE SALUD</h2>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Trabajador</th>
+						<th colspan="2">1</th>
+						<th colspan="2">2</th>
+						<th colspan="2">3</th>
+						<th colspan="2">4</th>
+						<th colspan="2">5</th>
+						<th colspan="2">6</th>
+						<th colspan="2">7</th>
+						<th colspan="2">8</th>
+					</tr>
+					<tr>
+						<th>Ítem</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+
+						<th>SI</th>
+						<th>NO</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							¿Estas en condiciones óptimas de salud para relalizar el trabajo? <br />
+							Según concepto médico
+						</td>
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Actualmente toma medicamentos que causen sueño, ejemplo, antigripales?</td>
+						<td><input type="checkbox" name="plataf_neumaticos_si" /></td>
+						<td><input type="checkbox" name="plataf_neumaticos_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Sufre de epilepsia, mareos o vértigo?</td>
+						<td><input type="checkbox" name="plataf_mandos_si" /></td>
+						<td><input type="checkbox" name="plataf_mandos_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Le tiene miedo a las alturas (acrofobia)?</td>
+						<td><input type="checkbox" name="plataf_base_si" /></td>
+						<td><input type="checkbox" name="plataf_base_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Tiene certificado de trabajos en altura vigente?</td>
+						<td><input type="checkbox" name="plataf_puerta_si" /></td>
+						<td><input type="checkbox" name="plataf_puerta_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Tiene vigente la afiliación a la seguridad social?</td>
+						<td><input type="checkbox" name="plataf_limpia_si" /></td>
+						<td><input type="checkbox" name="plataf_limpia_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+					<tr>
+						<td>¿Ha consumido sustancias alucinógenas o licor en las ultimas 12 horas?</td>
+						<td><input type="checkbox" name="plataf_nivel_si" /></td>
+						<td><input type="checkbox" name="plataf_nivel_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Elementos de protección personal -->
+
+		<h2>ELEMENTOS DE PROTECCIÓN PERSONAL Y SEGURIDAD</h2>
+		<p>Marque con una "x"</p>
+
+		<h3>ELEMENTOS DE PROTECCIÓN CONTRACAÍDAS</h3>
+		<!-- Tabla con 3 columnas: Ítems izquierda, Imagen al centro, Ítems derecha -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<!-- Columna izquierda: Ítems con checkboxes -->
+					<td width="35%" valign="top">
+						<p>
+							<label>
+								<input type="checkbox" name="linea_vida_vertical" />
+								LÍNEA DE VIDA VERTICAL
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="linea_vida_horizontal" />
+								LÍNEA DE VIDA HORIZONTAL
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="eslinga_posicionamiento" />
+								ESLINGA DE POSICIONAMIENTO
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="eslinga_absorbedor_impacto" />
+								ESLINGA EN Y CON ABSORBEDOR DE IMPACTO
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="cuerdas" />
+								CUERDAS
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="arnes_cuerpo_completo" />
+								ARNÉS DE CUERPO COMPLETO
+							</label>
+						</p>
+						<p>
+							<strong>OTROS? ¿CUÁL?</strong><br />
+							<input type="text" name="otros_contracaidas" style="width:90%;" />
+						</p>
+					</td>
+
+					<!-- Columna central: Imagen -->
+					<td width="30%" align="center" valign="middle">
+						<!-- Ajusta la ruta de la imagen según tu archivo -->
+						<img src="Imagen1.jpg" alt="Imagen de trabajador con arnés" style="max-width:100%;" />
+					</td>
+
+					<!-- Columna derecha: Ítems con checkboxes -->
+					<td width="35%" valign="top">
+						<p>
+							<label>
+								<input type="checkbox" name="mosquetones" />
+								MOSQUETONES
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="anclaje_fijo" />
+								ANCLAJE FIJO
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="linea_vida_autorretractil" />
+								LÍNEA DE VIDA AUTORRETRÁCTIL
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="punto_anclaje_portatil" />
+								PUNTO DE ANCLAJE PORTÁTIL
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="red_seguridad" />
+								RED DE SEGURIDAD
+							</label>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Se requiere de permisos adicionales? -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0" width="100%" style="margin-top:10px;">
+				<tr>
+					<td><strong>Se requiere de permisos adicionales?</strong></td>
+					<td>
+						<label>
+							<input type="checkbox" name="espacios_confinados" />
+							Trabajo en espacios confinados
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="energias_peligrosas" />
+							Trabajo con energías peligrosas
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="izaje_cargas" />
+							Trabajos de izaje de cargas
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="trabajos_caliente" />
+							Trabajos en caliente
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td><strong>Altura Aprox. que se realiza la tarea?</strong></td>
+					<td colspan="4">
+						<input type="text" name="altura_aprox" style="width:95%;" placeholder="Ej. 5 m, 10 m, etc." />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- EPP y Medidas colectivas -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>ELEMENTOS DE PROTECCIÓN PERSONAL</th>
+						<th>SI</th>
+						<th>N/A</th>
+						<th>MEDIDAS COLECTIVAS DE PREVENCIÓN</th>
+						<th>SI</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Casco con barbuquejo</td>
+						<td><input type="checkbox" name="casco_si" /></td>
+						<td><input type="checkbox" name="casco_na" /></td>
+						<td>Señalización de área</td>
+						<td><input type="checkbox" name="senalizacion_si" /></td>
+						<td><input type="checkbox" name="senalizacion_na" /></td>
+					</tr>
+					<tr>
+						<td>Guantes</td>
+						<td><input type="checkbox" name="guantes_si" /></td>
+						<td><input type="checkbox" name="guantes_na" /></td>
+						<td>Manejo desniveles/orificio</td>
+						<td><input type="checkbox" name="desniveles_si" /></td>
+						<td><input type="checkbox" name="desniveles_na" /></td>
+					</tr>
+					<tr>
+						<td>Botas</td>
+						<td><input type="checkbox" name="botas_si" /></td>
+						<td><input type="checkbox" name="botas_na" /></td>
+						<td>Control de acceso</td>
+						<td><input type="checkbox" name="acceso_si" /></td>
+						<td><input type="checkbox" name="acceso_na" /></td>
+					</tr>
+					<tr>
+						<td>Gafas</td>
+						<td><input type="checkbox" name="gafas_si" /></td>
+						<td><input type="checkbox" name="gafas_na" /></td>
+						<td>Delimitación de área</td>
+						<td><input type="checkbox" name="delimitacion_si" /></td>
+						<td><input type="checkbox" name="delimitacion_na" /></td>
+					</tr>
+					<tr>
+						<td>P. Auditiva</td>
+						<td><input type="checkbox" name="auditiva_si" /></td>
+						<td><input type="checkbox" name="auditiva_na" /></td>
+						<td>Línea de advertencia</td>
+						<td><input type="checkbox" name="advertencia_si" /></td>
+						<td><input type="checkbox" name="advertencia_na" /></td>
+					</tr>
+					<tr>
+						<td>Protector solar</td>
+						<td><input type="checkbox" name="solar_si" /></td>
+						<td><input type="checkbox" name="solar_na" /></td>
+						<td>Barandas</td>
+						<td><input type="checkbox" name="barandas_si" /></td>
+						<td><input type="checkbox" name="barandas_na" /></td>
+					</tr>
+					<tr>
+						<td>Otros ¿Cuál?</td>
+						<td colspan="2"><input type="text" name="otro_epp" style="width: 95%;" /></td>
+						<td>Ayudante de seguridad</td>
+						<td><input type="checkbox" name="ayudante_si" /></td>
+						<td><input type="checkbox" name="ayudante_na" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="2"></td>
+						<td>Otros ¿Cuál?</td>
+						<td colspan="2"><input type="text" name="otro_medida_colectiva" style="width: 95%;" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Herramientas -->
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Herramientas</th>
+						<th>Cant</th>
+						<th>Herramientas</th>
+						<th>Cant</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+						
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					</tr>
+
+					<tr>
+						<td><input type="text" name="herramienta_1" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_1" style="width: 95%;" /></td>
+						<td><input type="text" name="herramienta_2" style="width: 95%;" /></td>
+						<td><input type="text" name="cantidad_2" style="width: 95%;" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- SISTEMAS DE ACCESO -->
+		<h2>SISTEMAS DE ACCESO</h2>
+
+		<!-- ESCALERAS -->
+		<h3>ESCALERAS</h3>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td><strong>Modelo</strong></td>
+					<td><input type="text" name="escalera_modelo" style="width: 95%;" /></td>
+					<td><strong>Marca</strong></td>
+					<td><input type="text" name="escalera_marca" style="width: 95%;" /></td>
+					<td><strong>Capacidad</strong></td>
+					<td><input type="text" name="escalera_capacidad" style="width: 95%;" /></td>
+					<td><strong>Tipo</strong></td>
+					<td><input type="text" name="escalera_tipo" style="width: 95%;" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<h4>Lista de Chequeo (Marque con una "x" en cada ítem)</h4>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Ítem</th>
+						<th>SI</th>
+						<th>NO</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>¿La escalera está certificada?</td>
+						<td><input type="checkbox" name="esc_certificada_si" /></td>
+						<td><input type="checkbox" name="esc_certificada_no" /></td>
+						<td><input type="checkbox" name="esc_certificada_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Los largueros de la escalera están en buen estado?</td>
+						<td><input type="checkbox" name="esc_largueros_si" /></td>
+						<td><input type="checkbox" name="esc_largueros_no" /></td>
+						<td><input type="checkbox" name="esc_largueros_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Las zapatas están en buen estado?</td>
+						<td><input type="checkbox" name="esc_zapatas_si" /></td>
+						<td><input type="checkbox" name="esc_zapatas_no" /></td>
+						<td><input type="checkbox" name="esc_zapatas_na" /></td>
+					</tr>
+					<tr>
+						<td>Si es de extensión, ¿está en buen estado la polea?</td>
+						<td><input type="checkbox" name="esc_polea_si" /></td>
+						<td><input type="checkbox" name="esc_polea_no" /></td>
+						<td><input type="checkbox" name="esc_polea_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Las extensiones ruedan correctamente dentro de las guías?</td>
+						<td><input type="checkbox" name="esc_extensiones_si" /></td>
+						<td><input type="checkbox" name="esc_extensiones_no" /></td>
+						<td><input type="checkbox" name="esc_extensiones_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Los ganchos de seguridad aseguran correctamente?</td>
+						<td><input type="checkbox" name="esc_ganchos_si" /></td>
+						<td><input type="checkbox" name="esc_ganchos_no" /></td>
+						<td><input type="checkbox" name="esc_ganchos_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Está en un ángulo de 45°, como indican sus etiquetas?</td>
+						<td><input type="checkbox" name="esc_angulo_si" /></td>
+						<td><input type="checkbox" name="esc_angulo_no" /></td>
+						<td><input type="checkbox" name="esc_angulo_na" /></td>
+					</tr>
+					<tr>
+						<td>Si mide entre 4 y 8 m, ¿se iza mínimo entre dos personas?</td>
+						<td><input type="checkbox" name="esc_2personas_si" /></td>
+						<td><input type="checkbox" name="esc_2personas_no" /></td>
+						<td><input type="checkbox" name="esc_2personas_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Es Dieléctrica si hay sistemas eléctricos involucrados?</td>
+						<td><input type="checkbox" name="esc_dielec_si" /></td>
+						<td><input type="checkbox" name="esc_dielec_no" /></td>
+						<td><input type="checkbox" name="esc_dielec_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Sobrepasa 1.00 m a la estructura de apoyo?</td>
+						<td><input type="checkbox" name="esc_sobrepasa_si" /></td>
+						<td><input type="checkbox" name="esc_sobrepasa_no" /></td>
+						<td><input type="checkbox" name="esc_sobrepasa_na" /></td>
+					</tr>
+					<tr>
+						<td>¿La escalera está asegurada a una estructura fija?</td>
+						<td><input type="checkbox" name="esc_asegurada_si" /></td>
+						<td><input type="checkbox" name="esc_asegurada_no" /></td>
+						<td><input type="checkbox" name="esc_asegurada_na" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p>
+			<strong>¿APTA PARA SER USADA?</strong>
+			<label><input type="checkbox" name="escalera_apta_si" /> SI</label>
+			<label><input type="checkbox" name="escalera_apta_no" /> NO</label>
+		</p>
+		<p><strong>NOTA:</strong> En caso de modificar la estructura, realizar nueva verificación.</p>
+
+		<!-- ANDAMIO MULTIDIRECCIONAL -->
+		<h3>ANDAMIO MULTIDIRECCIONAL</h3>
+		<h4>Lista de Chequeo (Marque con una "x" en cada ítem)</h4>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Ítem</th>
+						<th>SI</th>
+						<th>NO</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>¿El andamio se encuentra nivelado?</td>
+						<td><input type="checkbox" name="andamio_nivelado_si" /></td>
+						<td><input type="checkbox" name="andamio_nivelado_no" /></td>
+						<td><input type="checkbox" name="andamio_nivelado_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Cuenta con soportes diagonales en cada cara?</td>
+						<td><input type="checkbox" name="andamio_diagonales_si" /></td>
+						<td><input type="checkbox" name="andamio_diagonales_no" /></td>
+						<td><input type="checkbox" name="andamio_diagonales_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Tiene escalerillas internas y compuertas para acceso?</td>
+						<td><input type="checkbox" name="andamio_escaleras_si" /></td>
+						<td><input type="checkbox" name="andamio_escaleras_no" /></td>
+						<td><input type="checkbox" name="andamio_escaleras_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Pines de seguridad de horizontales/diagonales correctamente instalados?</td>
+						<td><input type="checkbox" name="andamio_pines_si" /></td>
+						<td><input type="checkbox" name="andamio_pines_no" /></td>
+						<td><input type="checkbox" name="andamio_pines_na" /></td>
+					</tr>
+					<tr>
+						<td>¿La estructura no presenta golpes o abolladuras?</td>
+						<td><input type="checkbox" name="andamio_golpes_si" /></td>
+						<td><input type="checkbox" name="andamio_golpes_no" /></td>
+						<td><input type="checkbox" name="andamio_golpes_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Las plataformas cubren todo el vacío?</td>
+						<td><input type="checkbox" name="andamio_plataformas_si" /></td>
+						<td><input type="checkbox" name="andamio_plataformas_no" /></td>
+						<td><input type="checkbox" name="andamio_plataformas_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Cuenta con rodapiés para prevenir caída de objetos?</td>
+						<td><input type="checkbox" name="andamio_rodapies_si" /></td>
+						<td><input type="checkbox" name="andamio_rodapies_no" /></td>
+						<td><input type="checkbox" name="andamio_rodapies_na" /></td>
+					</tr>
+					<tr>
+						<td>Si supera su cálculo de autosoportabilidad, ¿está asegurado?</td>
+						<td><input type="checkbox" name="andamio_asegurado_si" /></td>
+						<td><input type="checkbox" name="andamio_asegurado_no" /></td>
+						<td><input type="checkbox" name="andamio_asegurado_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Está instalado sobre una superficie sólida?</td>
+						<td><input type="checkbox" name="andamio_superficie_si" /></td>
+						<td><input type="checkbox" name="andamio_superficie_no" /></td>
+						<td><input type="checkbox" name="andamio_superficie_na" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			<strong>¿APTO PARA SER USADO?</strong>
+			<label><input type="checkbox" name="andamio_apto_si" /> SI</label>
+			<label><input type="checkbox" name="andamio_apto_no" /> NO</label>
+		</p>
+		<p><strong>NOTA:</strong> Si se modifica la estructura, realizar nueva verificación.</p>
+
+		<!-- PRETALES -->
+		<h3>PRETALES</h3>
+		<h4>Lista de Chequeo (Marque con una "x" en cada ítem)</h4>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Ítem</th>
+						<th>SI</th>
+						<th>NO</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>¿El pretal está limpio y libre de contaminantes?</td>
+						<td><input type="checkbox" name="pretal_limpio_si" /></td>
+						<td><input type="checkbox" name="pretal_limpio_no" /></td>
+						<td><input type="checkbox" name="pretal_limpio_na" /></td>
+					</tr>
+					<tr>
+						<td>¿El termoincogible se encuentra en buenas condiciones?</td>
+						<td><input type="checkbox" name="pretal_termoincogible_si" /></td>
+						<td><input type="checkbox" name="pretal_termoincogible_no" /></td>
+						<td><input type="checkbox" name="pretal_termoincogible_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Se cuenta con tercer pretal (anclaje portátil-tie-off)?</td>
+						<td><input type="checkbox" name="pretal_tercer_si" /></td>
+						<td><input type="checkbox" name="pretal_tercer_no" /></td>
+						<td><input type="checkbox" name="pretal_tercer_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Los guardacabos se encuentran en buen estado?</td>
+						<td><input type="checkbox" name="pretal_guardacabos_si" /></td>
+						<td><input type="checkbox" name="pretal_guardacabos_no" /></td>
+						<td><input type="checkbox" name="pretal_guardacabos_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Los pretales cuentan con protector de cuerda?</td>
+						<td><input type="checkbox" name="pretal_protector_si" /></td>
+						<td><input type="checkbox" name="pretal_protector_no" /></td>
+						<td><input type="checkbox" name="pretal_protector_na" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			<strong>¿APTO PARA SER USADO?</strong>
+			<label><input type="checkbox" name="pretal_apto_si" /> SI</label>
+			<label><input type="checkbox" name="pretal_apto_no" /> NO</label>
+		</p>
+		<p><strong>NOTA:</strong> Sin sistema de protección contra caídas (anclaje portátil), no se podrá realizar la
+			actividad.</p>
+
+		<!-- ACCESO POR CUERDAS -->
+		<h3>ACCESO POR CUERDAS PARA TRABAJO EN SUSPENSIÓN</h3>
+		<h4>Lista de Chequeo (Marque con una "x" en cada ítem)</h4>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Ítem</th>
+						<th>SI</th>
+						<th>NO</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>¿Se cuenta con descendedor certificado y apto?</td>
+						<td><input type="checkbox" name="cuerdas_descendedor_si" /></td>
+						<td><input type="checkbox" name="cuerdas_descendedor_no" /></td>
+						<td><input type="checkbox" name="cuerdas_descendedor_na" /></td>
+					</tr>
+					<tr>
+						<td>¿El anticaídas (freno) está en óptimas condiciones?</td>
+						<td><input type="checkbox" name="cuerdas_freno_si" /></td>
+						<td><input type="checkbox" name="cuerdas_freno_no" /></td>
+						<td><input type="checkbox" name="cuerdas_freno_na" /></td>
+					</tr>
+					<tr>
+						<td>¿La silla para trabajo en suspensión está apta?</td>
+						<td><input type="checkbox" name="cuerdas_silla_si" /></td>
+						<td><input type="checkbox" name="cuerdas_silla_no" /></td>
+						<td><input type="checkbox" name="cuerdas_silla_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Las cuerdas (línea de vida y de trabajo) están certificadas?</td>
+						<td><input type="checkbox" name="cuerdas_certificadas_si" /></td>
+						<td><input type="checkbox" name="cuerdas_certificadas_no" /></td>
+						<td><input type="checkbox" name="cuerdas_certificadas_na" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			<strong>¿APTO PARA SER USADO?</strong>
+			<label><input type="checkbox" name="cuerdas_apto_si" /> SI</label>
+			<label><input type="checkbox" name="cuerdas_apto_no" /> NO</label>
+		</p>
+
+		<!-- PLATAFORMA ELEVADORA -->
+		<h3>PLATAFORMA ELEVADORA</h3>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td><strong>Modelo</strong></td>
+					<td><input type="text" name="plataforma_modelo" style="width: 95%;" /></td>
+					<td><strong>Marca</strong></td>
+					<td><input type="text" name="plataforma_marca" style="width: 95%;" /></td>
+					<td><strong>Capacidad</strong></td>
+					<td><input type="text" name="plataforma_capacidad" style="width: 95%;" /></td>
+					<td><strong>Tipo</strong></td>
+					<td><input type="text" name="plataforma_tipo" style="width: 95%;" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<h4>Lista de Chequeo (Marque con una "x" en cada ítem)</h4>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Ítem</th>
+						<th>SI</th>
+						<th>NO</th>
+						<th>N/A</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>¿Hay fuga de aceite? (si es de combustible interna)</td>
+						<td><input type="checkbox" name="plataf_aceite_si" /></td>
+						<td><input type="checkbox" name="plataf_aceite_no" /></td>
+						<td><input type="checkbox" name="plataf_aceite_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Buen estado de neumáticos?</td>
+						<td><input type="checkbox" name="plataf_neumaticos_si" /></td>
+						<td><input type="checkbox" name="plataf_neumaticos_no" /></td>
+						<td><input type="checkbox" name="plataf_neumaticos_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Buen estado de los mandos?</td>
+						<td><input type="checkbox" name="plataf_mandos_si" /></td>
+						<td><input type="checkbox" name="plataf_mandos_no" /></td>
+						<td><input type="checkbox" name="plataf_mandos_na" /></td>
+					</tr>
+					<tr>
+						<td>¿La base se encuentra nivelada?</td>
+						<td><input type="checkbox" name="plataf_base_si" /></td>
+						<td><input type="checkbox" name="plataf_base_no" /></td>
+						<td><input type="checkbox" name="plataf_base_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Cuenta con puerta de acceso en buen estado?</td>
+						<td><input type="checkbox" name="plataf_puerta_si" /></td>
+						<td><input type="checkbox" name="plataf_puerta_no" /></td>
+						<td><input type="checkbox" name="plataf_puerta_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Plataforma limpia y libre de sustancias deslizantes?</td>
+						<td><input type="checkbox" name="plataf_limpia_si" /></td>
+						<td><input type="checkbox" name="plataf_limpia_no" /></td>
+						<td><input type="checkbox" name="plataf_limpia_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Nivel electrónico funciona correctamente?</td>
+						<td><input type="checkbox" name="plataf_nivel_si" /></td>
+						<td><input type="checkbox" name="plataf_nivel_no" /></td>
+						<td><input type="checkbox" name="plataf_nivel_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Buen estado de las soldaduras?</td>
+						<td><input type="checkbox" name="plataf_soldaduras_si" /></td>
+						<td><input type="checkbox" name="plataf_soldaduras_no" /></td>
+						<td><input type="checkbox" name="plataf_soldaduras_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Hay fugas hidráulicas?</td>
+						<td><input type="checkbox" name="plataf_fugas_si" /></td>
+						<td><input type="checkbox" name="plataf_fugas_no" /></td>
+						<td><input type="checkbox" name="plataf_fugas_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Buen estado de articulaciones y émbolos?</td>
+						<td><input type="checkbox" name="plataf_articulaciones_si" /></td>
+						<td><input type="checkbox" name="plataf_articulaciones_no" /></td>
+						<td><input type="checkbox" name="plataf_articulaciones_na" /></td>
+					</tr>
+					<tr>
+						<td>¿El sistema de emergencia o pedal de hombre muerto funciona?</td>
+						<td><input type="checkbox" name="plataf_emergencia_si" /></td>
+						<td><input type="checkbox" name="plataf_emergencia_no" /></td>
+						<td><input type="checkbox" name="plataf_emergencia_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Cuenta con último mantenimiento programado?</td>
+						<td><input type="checkbox" name="plataf_manto_si" /></td>
+						<td><input type="checkbox" name="plataf_manto_no" /></td>
+						<td><input type="checkbox" name="plataf_manto_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Se indica la carga máxima de utilización del equipo?</td>
+						<td><input type="checkbox" name="plataf_carga_si" /></td>
+						<td><input type="checkbox" name="plataf_carga_no" /></td>
+						<td><input type="checkbox" name="plataf_carga_na" /></td>
+					</tr>
+					<tr>
+						<td>¿Se indica la altura máxima de elevación del equipo?</td>
+						<td><input type="checkbox" name="plataf_altura_si" /></td>
+						<td><input type="checkbox" name="plataf_altura_no" /></td>
+						<td><input type="checkbox" name="plataf_altura_na" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			<strong>¿APTA PARA SER USADA?</strong>
+			<label><input type="checkbox" name="plataforma_apta_si" /> SI</label>
+			<label><input type="checkbox" name="plataforma_apta_no" /> NO</label>
+		</p>
+		<p><strong>NOTA:</strong> Tenga en cuenta las recomendaciones del fabricante antes de utilizar estas plataformas
+			elevadoras.</p>
+
+		<!-- ESTRUCTURA FIJA -->
+		<h3>ESTRUCTURA FIJA</h3>
+		<p><strong>OBSERVACIONES:</strong></p>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0" style="height: 100px;">
+				<tr>
+					<td style="height: 80px;">
+						<textarea name="observaciones_estructura_fija" rows="4" style="width: 95%;"></textarea>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- PERSONA ENCARGADA DE ACTIVAR EL PLAN DE EMERGENCIAS -->
+		<h3>PERSONA ENCARGADA DE ACTIVAR EL PLAN DE EMERGENCIAS</h3>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td><strong>NOMBRE</strong></td>
+					<td><input type="text" name="nombre_plan_emergencia" style="width: 95%;" /></td>
+				</tr>
+				<tr>
+					<td><strong>FIRMA</strong></td>
+					<td><input type="text" name="firma_plan_emergencia" style="width: 95%;"
+							placeholder="(O nombre a modo de firma)" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<p><strong>OBSERVACIONES</strong></p>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0" style="height: 100px;">
+				<tr>
+					<td style="height: 80px;">
+						<textarea name="observaciones_generales" rows="4" style="width: 95%;"></textarea>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<form>
+			<p><strong>FOTOS</strong></p>
+			<div class="table-responsive">
+				<table border="1" cellpadding="5" cellspacing="0" style="height: 100px;">
+					<tr>
+						<td style="height: 80px;">
+							<!-- Input para subir múltiples fotos -->
+							<input type="file" name="fotos_evidencia" accept="image/*" multiple
+								onchange="previewImages(event)" />
+							<br />
+							<br />
+							<!-- Contenedor donde se mostrarán todas las vistas previas -->
+							<div id="preview-container" style="display: flex; flex-wrap: wrap;"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+
+		<!-- Emisor del permiso / Coordinador TSA -->
+		<h3>EMISOR DEL PERMISO SST &nbsp; | &nbsp; COORDINADOR TSA</h3>
+		<div class="table-responsive">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td><strong>NOMBRE</strong></td>
+					<td><input type="text" name="emisor_nombre" style="width: 95%;" /></td>
+					<td><strong>NOMBRE</strong></td>
+					<td><input type="text" name="coordinador_nombre" style="width: 95%;" /></td>
+					<td><strong>FECHA DE AUTORIZACIÓN</strong></td>
+					<td><input type="text" name="fecha_autorizacion" style="width: 95%;" placeholder="dd-mm-aaaa" />
+					</td>
+				</tr>
+				<tr>
+					<td><strong>CÉDULA</strong></td>
+					<td><input type="text" name="emisor_cedula" style="width: 95%;" /></td>
+					<td><strong>CÉDULA</strong></td>
+					<td><input type="text" name="coordinador_cedula" style="width: 95%;" /></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><strong>CARGO</strong></td>
+					<td><input type="text" name="emisor_cargo" style="width: 95%;" /></td>
+					<td><strong>CARGO</strong></td>
+					<td><input type="text" name="coordinador_cargo" style="width: 95%;" /></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><strong>FIRMA</strong></td>
+					<td><input type="text" name="emisor_firma" style="width: 95%;"
+							placeholder="(O nombre a modo de firma)" /></td>
+					<td><strong>FIRMA</strong></td>
+					<td><input type="text" name="coordinador_firma" style="width: 95%;"
+							placeholder="(O nombre a modo de firma)" /></td>
+
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Botón para imprimir -->
+		<p>
+			<button type="button" onclick="window.print()">Imprimir</button>
+		</p>
+	</form>
+	<script src="script.js"></script>
+</body>
+
+</html>
