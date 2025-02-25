@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista de Chequeo para Trabajos en Altura</title>
+  <link rel="stylesheet" href="chequeo.css">
+</head>
+
+<body>
+  <h2>LISTA DE CHEQUEO PARA TRABAJOS EN ALTURA</h2>
+  <h3>SISTEMA DE GESTIÓN DE LA SEGURIDAD Y SALUD EN EL TRABAJO</h3>
+  <form>
+    <!-- INFORMACIÓN GENERAL -->
+    <table>
+      <tr>
+        <td colspan="22" class="info-td">
+          <strong>LUGAR:</strong>
+          <input type="text" name="lugar" placeholder="Lugar" /> &emsp;
+          <strong>FECHA:</strong>
+          <input type="text" name="fecha" placeholder="Fecha" /> &emsp; <br>
+          <strong>HORA:</strong>
+          <input type="text" name="hora" placeholder="Hora" />
+          <br><br>
+          <strong>SUPERVISOR-ENCARGADO:</strong>
+          <input type="text" name="supervisor" placeholder="Nombre del Supervisor" />
+          <br><br>
+          <strong>DESCRIPCIÓN DEL TRABAJO:</strong><br>
+          <textarea name="descripcion_trabajo" placeholder="Describa brevemente la actividad"></textarea>
+          <br><br>
+          <strong>SEMANA:</strong>
+          <input type="text" name="semana" placeholder="Número o fecha de la semana" />
+        </td>
+      </tr>
+      <!-- CABECERA DE DÍAS (2 FILAS) -->
+      <tr>
+        <th rowspan="2" style="width: 25%;">ITEM A VERIFICAR</th>
+        <th colspan="3">LUNES</th>
+        <th colspan="3">MARTES</th>
+        <th colspan="3">MIÉRCOLES</th>
+        <th colspan="3">JUEVES</th>
+        <th colspan="3">VIERNES</th>
+        <th colspan="3">SÁBADO</th>
+        <th colspan="3">DOMINGO</th>
+      </tr>
+      <tr>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+        <th>SI</th>
+        <th>NO</th>
+        <th>NA</th>
+      </tr>
+      <!-- ITEM 1 -->
+      <tr>
+        <td style="text-align: left;">
+          1. ¿Se ha diligenciado permiso de trabajo?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item1_lunes" value="SI" id="item1_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_lunes" value="NO" id="item1_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_lunes" value="NA" id="item1_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item1_martes" value="SI" id="item1_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_martes" value="NO" id="item1_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_martes" value="NA" id="item1_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item1_miercoles" value="SI" id="item1_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_miercoles" value="NO" id="item1_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_miercoles" value="NA" id="item1_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item1_jueves" value="SI" id="item1_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_jueves" value="NO" id="item1_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_jueves" value="NA" id="item1_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item1_viernes" value="SI" id="item1_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_viernes" value="NO" id="item1_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_viernes" value="NA" id="item1_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item1_sabado" value="SI" id="item1_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_sabado" value="NO" id="item1_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_sabado" value="NA" id="item1_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item1_domingo" value="SI" id="item1_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item1_domingo" value="NO" id="item1_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item1_domingo" value="NA" id="item1_domingo_na">
+        </td>
+      </tr>
+      <!-- ITEM 2 -->
+      <tr>
+        <td style="text-align: left;">
+          2. ¿Se ha realizado charla de seguridad antes de iniciar el trabajo?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+      </tr>
+      <!-- ITEM 3 -->
+      <tr>
+        <td style="text-align: left;">
+          3. ¿Se ha socializado el procedimiento seguro de trabajo en alturas?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+      </tr>
+      <!-- ITEM 4 -->
+      <tr>
+        <td style="text-align: left;">
+          4. ¿Existe un AST (Análisis de Trabajo seguro) vigente para la tarea y los controles recomendados han sido
+          dispuestos?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">
+          5. ¿Ha sido revisado el método de acceso al sitio: Escaleras portátiles o fijas, líneas de izaje, andamios,
+          elevadores?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+      </tr>
+      <td style="text-align: left;">
+        6. ¿La línea de vida ha sido inspeccionada?, ¿Es adecuada para soportar una caída?
+      </td>
+      <!-- Lunes -->
+      <td>
+        <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+      </td>
+      <!-- Martes -->
+      <td>
+        <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+      </td>
+      <!-- Miércoles -->
+      <td>
+        <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+      </td>
+      <!-- Jueves -->
+      <td>
+        <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+      </td>
+      <!-- Viernes -->
+      <td>
+        <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+      </td>
+      <!-- Sábado -->
+      <td>
+        <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+      </td>
+      <!-- Domingo -->
+      <td>
+        <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+      </td>
+      <td>
+        <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+      </td>
+      <td>
+        <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+      </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">
+          7. ¿Se cuenta con arnés de cuerpo entero y este ha sido inspeccionado?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">
+          8. ¿Se ha hecho una inspección reciente de los elementos propios del área de trabajo que tengan el riesgo de
+          caer?
+        </td>
+        <!-- Lunes -->
+        <td>
+          <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+        </td>
+        <!-- Martes -->
+        <td>
+          <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+        </td>
+        <!-- Miércoles -->
+        <td>
+          <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+        </td>
+        <!-- Jueves -->
+        <td>
+          <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+        </td>
+        <!-- Viernes -->
+        <td>
+          <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+        </td>
+        <!-- Sábado -->
+        <td>
+          <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+        </td>
+        <!-- Domingo -->
+        <td>
+          <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+        </td>
+        <td>
+          <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+        </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            9. ¿Se ha verificado que el método de subir herramientas hacia el sitio de trabajo es seguro?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            10. ¿Se ha señalizado / aislado el área debajo de la cual se realizará el trabajo
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            11. ¿Se cuenta con cuerdas para amarrar las herramientas cuando se este realizando el trabajo?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            12. ¿Se ha dispuesto de un método para asegurar que elementos, equipos o piezas retiradas durante el trabajo
+            en
+            altura no caigan? ¿Algún tipo de recipiente?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            13. ¿El peso / volumen de las piezas, elementos o equipos que se vayan a manipular en lo alto es adecuado
+            para
+            la capacidad de la plataforma de trabajo y de la persona(s) que realizará el trabajo?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            14. ¿Se han inspeccionado todos los elementos de izaje que se vayan a utilizar durante el trabajo?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            15. ¿El trabajador manifiesta que sus condiciones físicas son adecuadas para realizar la actividad?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">
+            16. ¿La plataforma de trabajo: Es firme, se encuentra en orden- no hay objetos sueltos, cuenta con barandas,
+            tiene instalados rodapies, tiene el piso cubierto para evitar caída de objetos pequeños por rendijas?
+          </td>
+          <!-- Lunes -->
+          <td>
+            <input type="radio" name="item2_lunes" value="SI" id="item2_lunes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NO" id="item2_lunes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_lunes" value="NA" id="item2_lunes_na">
+          </td>
+          <!-- Martes -->
+          <td>
+            <input type="radio" name="item2_martes" value="SI" id="item2_martes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NO" id="item2_martes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_martes" value="NA" id="item2_martes_na">
+          </td>
+          <!-- Miércoles -->
+          <td>
+            <input type="radio" name="item2_miercoles" value="SI" id="item2_miercoles_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NO" id="item2_miercoles_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_miercoles" value="NA" id="item2_miercoles_na">
+          </td>
+          <!-- Jueves -->
+          <td>
+            <input type="radio" name="item2_jueves" value="SI" id="item2_jueves_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NO" id="item2_jueves_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_jueves" value="NA" id="item2_jueves_na">
+          </td>
+          <!-- Viernes -->
+          <td>
+            <input type="radio" name="item2_viernes" value="SI" id="item2_viernes_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NO" id="item2_viernes_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_viernes" value="NA" id="item2_viernes_na">
+          </td>
+          <!-- Sábado -->
+          <td>
+            <input type="radio" name="item2_sabado" value="SI" id="item2_sabado_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NO" id="item2_sabado_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_sabado" value="NA" id="item2_sabado_na">
+          </td>
+          <!-- Domingo -->
+          <td>
+            <input type="radio" name="item2_domingo" value="SI" id="item2_domingo_si">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NO" id="item2_domingo_no">
+          </td>
+          <td>
+            <input type="radio" name="item2_domingo" value="NA" id="item2_domingo_na">
+          </td>
+        </tr>
+        <td style="text-align: left;">
+          17. Firma de quien diligencia esta lista (Cédula)
+        </td>
+        <!-- En este caso, se usa una sola celda que abarque las 21 columnas restantes -->
+        <td colspan="21" class="observaciones" style="text-align: left;">
+          <strong>Nombre:</strong> <input type="text" name="nombre_diligencia" placeholder="Nombre completo" /><br><br>
+          <strong>Cédula:</strong> <input type="text" name="cedula_diligencia" placeholder="No. de cédula" /><br><br>
+          <strong>Firma:</strong> <textarea type="text" name="cedula_diligencia" style="border: none;" ></textarea><br><br>
+
+        </td>
+        </tr>
+        <!-- TEXTO FINAL -->
+        <tr>
+          <td colspan="22" style="text-align: left;">
+            <p><strong>En caso de tormenta eléctrica se debe suspender el trabajo.</strong></p>
+            <p>
+              Yo, como responsable de la ejecución, he revisado que los controles se han implementado y me
+              comprometo a cumplir con todas las normas y recomendaciones de esta lista.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="22" style="text-align: left;">
+            <strong>Nombre Responsable SST:</strong>
+            <input type="text" name="nombre_responsable_sst" placeholder="Nombre Responsable SST" />
+            &emsp; <br>
+            <strong>Firma:</strong>
+            <textarea type="text" name="firma_responsable_sst"  style="border: none;"></textarea> 
+            &emsp; <br>
+            <strong>Fecha:</strong>
+            <input type="text" name="fecha_responsable_sst" placeholder="Fecha" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="22" style="text-align: left;">
+            <em>
+              El Responsable de SST no validará el permiso si esta lista de chequeo no ha sido diligenciada totalmente
+              o si verifica el no cumplimiento de todas las recomendaciones.
+            </em>
+          </td>
+        </tr>
+    </table>
+    
+    <a href="validacion.html">Volver</a>
+    <p>
+			<button type="button" onclick="window.print()">Imprimir</button>
+		</p>
+  </form>
+</body>
+
+</html>

@@ -48,20 +48,20 @@ h3 {
   padding: 4px;
 }
 
-/* Estilos para textarea */
-textarea {
+ textarea textarea {
   width: 95%;
   min-height: 2em;
-  /* Altura mínima */
+
   overflow: hidden;
-  /* Oculta las barras de desplazamiento */
+
   resize: none;
-  /* Impide el redimensionamiento manual */
+
   white-space: pre-wrap;
-  /* Respeta saltos de línea */
+
   word-wrap: break-word;
-  /* Evita crecimiento horizontal */
+
   overflow-wrap: break-word;
+  font-size: 15px;
 }
 
 /* Contenedor para tablas responsivas */
@@ -120,10 +120,10 @@ textarea {
 }
 
 /* Ajustes para impresión */
-@media print {
+/* @media print {
   textarea {
     height: auto !important;
     overflow: visible !important;
     white-space: pre-wrap !important;
   }
-}
+} */

@@ -1,33 +1,29 @@
 function previewImages(event) {
-  const files = event.target.files;
-  const container = document.getElementById('preview-container');
-  container.innerHTML = ''; // Limpiar cualquier imagen previa
+  let files = event.target.files;
+  let previewContainer = document.getElementById("preview-container");
+  
+  // Limpiar las vistas previas anteriores
+  previewContainer.innerHTML = "";
 
-  // Recorremos todos los archivos seleccionados
   for (let i = 0; i < files.length; i++) {
-    const file = files[i];
+      let file = files[i];
 
-    // Opcional: Validar que el archivo sea realmente una imagen
-    if (!file.type.startsWith('image/')) {
-      continue;
-    }
-
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      // Crear un elemento <img> para cada archivo
-      const img = document.createElement('img');
-      img.src = e.target.result;
-      img.style.maxWidth = '150px';
-      img.style.marginRight = '10px';
-      img.style.marginBottom = '10px';
-
-      // Agregar la imagen al contenedor
-      container.appendChild(img);
-    };
-    // Leer el archivo como DataURL para la vista previa
-    reader.readAsDataURL(file);
+      if (file.type.startsWith("image/")) {
+          let reader = new FileReader();
+          reader.onload = function (e) {
+              let img = document.createElement("img");
+              img.src = e.target.result;
+              img.style.width = "200px"; // Ajusta el tamaño de la vista previa
+              img.style.height = "200px";
+              img.style.margin = "5px";
+              img.style.objectFit = "cover"; // Para mantener la proporción
+              previewContainer.appendChild(img);
+          };
+          reader.readAsDataURL(file);
+      }
   }
 }
+
 
 function autoExpand(field) {
   // Reinicia la altura para recalcular correctamente
